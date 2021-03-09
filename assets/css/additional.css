@@ -1,0 +1,8 @@
+#banner .container {
+  display: flex;
+}
+
+#banner .container svg{
+  width: 60px;
+  height: 60px;
+}
