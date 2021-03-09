@@ -1672,7 +1672,7 @@ input, select, textarea {
 	form label {
 		font-weight: 600;
 		text-transform: uppercase;
-		color: var(--accent-secondary-color);
+		color: var(--bg-main-color);
 		display: block;
 		margin: 0 0 1em 0;
 	}
@@ -1710,20 +1710,20 @@ input, select, textarea {
 	}
 
 	form ::-webkit-input-placeholder {
-		color: var(--text-secondary-color) !important;
+		color: var(--bg-main-color) !important;
 		line-height: 1.35em;
 	}
 
 	form :-moz-placeholder {
-		color: var(--text-secondary-color) !important;
+		color: var(--bg-main-color) !important;
 	}
 
 	form ::-moz-placeholder {
-		color: var(--text-secondary-color) !important;
+		color: var(--bg-main-color) !important;
 	}
 
 	form :-ms-input-placeholder {
-		color: var(--text-secondary-color) !important;
+		color: var(--bg-main-color) !important;
 	}
 
 	form ::-moz-focus-inner {
@@ -1785,7 +1785,7 @@ input, select, textarea {
 		position: relative;
 		display: inline-block;
 		background: var(--text-header-color);
-		color: var(--text-emphasis-color) !important;
+		color: var(--bg-emphasis-color) !important;
 		text-transform: uppercase;
 		border-radius: 4px;
 		border: 0;
@@ -1831,7 +1831,7 @@ input, select, textarea {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: var(--accent-main-color);
+			background: var(--bg-main-color);
 		}
 
 			input[type="button"].alt:hover,
