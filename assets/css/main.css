@@ -2219,8 +2219,8 @@ input, select, textarea {
 	#footer {
 		position: relative;
 		overflow: hidden;
-		border-top: solid 2px #e5e5e5;
-		background: lightsteelblue;
+		border-top: solid 2px var(--accent-secondary-color);
+		background: var(--bg-secondary-color);
 		padding: 6em 0 8em 0;
 	}
 
@@ -2229,7 +2229,7 @@ input, select, textarea {
 		#footer form input[type="password"],
 		#footer form select,
 		#footer form textarea {
-			background: #f7f7f7;
+			background: var(--accent-secondary-color);
 		}
 
 			#footer form input[type="text"]:focus,
@@ -2237,7 +2237,7 @@ input, select, textarea {
 			#footer form input[type="password"]:focus,
 			#footer form select:focus,
 			#footer form textarea:focus {
-				background: #fff;
+				background: var(--accent-main-color);
 			}
 
 		#footer h2 {
@@ -2247,7 +2247,7 @@ input, select, textarea {
 /* Copyright */
 
 	#copyright {
-		border-top: solid 2px #e5e5e5;
+		border-top: solid 2px var(--accent-main-color);
 		text-align: center;
 		margin-top: 6em;
 		padding-top: 4em;
