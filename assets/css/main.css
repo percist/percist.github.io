@@ -7,6 +7,20 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+* {
+  --bg-main-color: #002244;
+  --bg-secondary-color: #98A6D4;
+  --text-main-color: #EBF2FA;
+  --text-secondary-color: #F8F7F9;
+  --text-emphasis-color: #D3D3D3;
+  --text-header-color: #C1D733;
+  --text-header-color-emphasis: #BCD22E;
+  --text-header-color-active: #B7CC28;
+  --accent-main-color: #8D9190;
+  --accent-secondary-color: #B0B2B2;
+  --box-shadow-main: rgba(0, 0, 0, 0.1) 1px .5px 2px 1px;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -101,7 +115,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
-    color: lightgrey;
+    color: var(--text-main-color);
 		line-height: 1.65em;
 		font-size: 15pt;
 	}
@@ -109,7 +123,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 600;
 		text-transform: uppercase;
-		color: lightgrey;
+		color: var(--text-emphasis-color);
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -137,7 +151,7 @@ input, select, textarea {
 		-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-		color: #A5ACAF;
+		color: var(--accent-main-color);
 		text-decoration: none;
 		border-bottom: solid 1px #ddd;
 	}
@@ -150,17 +164,17 @@ input, select, textarea {
 		}
 
 		a:hover {
-			color: #69BE28;
+			color: var(--text-header-color-active);
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
 			a:hover strong {
-				color: #69BE28;
+				color: var(--text-header-color-emphasis);
 			}
 
 	strong, b {
 		font-weight: 600;
-		color: #A5ACAF;
+		color: var(--text-emphasis-color);
 	}
 
 	em, i {
@@ -1635,8 +1649,8 @@ input, select, textarea {
 				top: 2.6em;
 				display: block;
 				font-size: 0.8em;
-				background: #878787;
-				color: #e4e4e4;
+				background: var(--bg-main-color);
+				color: var(--bg-secondary-color);
 				width: 2em;
 				height: 2em;
 				border-radius: 2em;
@@ -1658,7 +1672,7 @@ input, select, textarea {
 	form label {
 		font-weight: 600;
 		text-transform: uppercase;
-		color: #888;
+		color: var(--accent-secondary-color);
 		display: block;
 		margin: 0 0 1em 0;
 	}
@@ -1675,7 +1689,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		display: block;
 		border: 0;
-		background: #e8e8e8;
+		background: var(--accent-secondary-color);
 		width: 100%;
 		box-shadow: inset 2px 2px 0px 0px rgba(0, 0, 0, 0.1);
 		border-radius: 4px;
@@ -1688,7 +1702,7 @@ input, select, textarea {
 		form input[type="password"]:focus,
 		form select:focus,
 		form textarea:focus {
-			background: #f0f0f0;
+			background: var(--accent-main-color);
 		}
 
 	form textarea {
@@ -1696,20 +1710,20 @@ input, select, textarea {
 	}
 
 	form ::-webkit-input-placeholder {
-		color: #555 !important;
+		color: var(--text-secondary-color) !important;
 		line-height: 1.35em;
 	}
 
 	form :-moz-placeholder {
-		color: #555 !important;
+		color: var(--text-secondary-color) !important;
 	}
 
 	form ::-moz-placeholder {
-		color: #555 !important;
+		color: var(--text-secondary-color) !important;
 	}
 
 	form :-ms-input-placeholder {
-		color: #555 !important;
+		color: var(--text-secondary-color) !important;
 	}
 
 	form ::-moz-focus-inner {
@@ -1741,8 +1755,8 @@ input, select, textarea {
 		}
 
 		table thead {
-			background: #878787;
-			color: #fff;
+			background: var(--bg-secondary-color);
+			color: var(--text-secondary-color);
 			font-weight: 400;
 			text-transform: uppercase;
 			border: 0;
@@ -1752,8 +1766,8 @@ input, select, textarea {
 		}
 
 		table tfoot {
-			background: #F0F0F0;
-			border-top: solid 2px #E5E5E5;
+			background: var(--bg-secondary-color);
+			border-top: solid 2px var(--accent-secondary-color);
 		}
 
 /* Button */
@@ -1770,8 +1784,8 @@ input, select, textarea {
 		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
-		background: #69BE28;
-		color: #fff !important;
+		background: var(--text-header-color);
+		color: var(--text-emphasis-color) !important;
 		text-transform: uppercase;
 		border-radius: 4px;
 		border: 0;
@@ -1801,7 +1815,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #fd887a;
+			background: var(--text-header-color-active);
 		}
 
 		input[type="button"]:active,
@@ -1809,7 +1823,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background: #ed786a;
+			background: var(--text-header-color-active);
 		}
 
 		input[type="button"].alt,
@@ -1817,7 +1831,7 @@ input, select, textarea {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: #878787;
+			background: var(--accent-main-color);
 		}
 
 			input[type="button"].alt:hover,
@@ -1825,7 +1839,7 @@ input, select, textarea {
 			input[type="reset"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background: #979797;
+				background: var(--text-header-color-emphasis);
 			}
 
 			input[type="button"].alt:active,
@@ -1833,7 +1847,7 @@ input, select, textarea {
 			input[type="reset"].alt:active,
 			button.alt:active,
 			.button.alt:active {
-				background: #878787;
+				background: var(--accent-main-color);
 			}
 
 /* Box */
@@ -1918,7 +1932,7 @@ input, select, textarea {
 		#header h1 {
 			font-family: 'Arvo';
 			font-weight: 700;
-			color: #69BE28;
+			color: #C0D62D;
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 			font-size: 3em;
 			letter-spacing: 13px;
@@ -1931,7 +1945,7 @@ input, select, textarea {
 		#header p {
 			text-transform: uppercase;
 			font-weight: 400;
-			color: lightgrey;
+			color: #d3d3d3;
 			margin: 2.5em 0 0 0;
 			font-size: 0.85em;
 			letter-spacing: 3px;
