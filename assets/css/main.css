@@ -217,6 +217,11 @@ input, select, textarea {
 		clear: both;
 	}
 
+  .contact-links {
+    text-decoration: none;
+    color: var(--bg-main-color)
+  }
+
 /* Container */
 
 	.container {
